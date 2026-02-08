@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Do You Love Me?</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #ffe6ec; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; overflow: hidden; }
+  .container { text-align: center; background: white; padding: 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); width: 300px; }
+  .media { width: 220px; border-radius: 12px; }
+  .button-container { margin-top: 20px; position: relative; height: 50px; }
+  .btn { padding: 10px 24px; font-size: 16px; border-radius: 30px; border: none; cursor: pointer; position: absolute; }
+  .yes-btn { background: #ff4d6d; color: white; left: 20px; }
+  .no-btn { background: #ccc; right: 20px; transition: 0.2s; }
+  .result-container { display: none; }
+</style>
+</head>
+<body>
+
+<div class="question-container container">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZpZ3cydm9mMHRtdm12dmM3cTRjb3hqNDhlemF2MnRmbzhpY3YwdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1JmGiBtqTuehfYxuy9/giphy.gif" alt="Love GIF" class="media" />
+  <h2>Do you love me?</h2>
+  <div class="button-container">
+    <button class="yes-btn btn js-yes-btn">Yes</button>
+    <button class="no-btn btn js-no-btn">No</button>
+  </div>
+</div>
+
+<div class="result-container container">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZpZ3cydm9mMHRtdm12dmM3cTRjb3hqNDhlemF2MnRmbzhpY3YwdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1JmGiBtqTuehfYxuy9/giphy.gif" alt="Love Result GIF" class="media" />
+  <h2>I knew it! Minshi💖 Love You Too💖</h2>
+</div>
+
+<script>
+  const yesBtn = document.querySelector('.js-yes-btn');
+  const noBtn = document.querySelector('.js-no-btn');
+  const questionBox = document.querySelector('.question-container');
+  const resultBox = document.querySelector('.result-container');
+
+  yesBtn.addEventListener('click', () => {
+    questionBox.style.display = 'none';
+    resultBox.style.display = 'block';
+  });
+
+  const moveButton = () => {
+    const x = Math.random() * (window.innerWidth - 100) - (window.innerWidth / 2 - 50);
+    const y = Math.random() * (window.innerHeight - 100) - (window.innerHeight / 2 - 50);
+    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+  };
+
+  noBtn.addEventListener('mouseover', moveButton);
+  noBtn.addEventListener('touchstart', (e) => { e.preventDefault(); moveButton(); });
+</script>
+</body>
+</html>
