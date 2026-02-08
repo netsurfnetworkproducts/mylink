@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;title&gt;Do You Love Me?&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #ffe6ec;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.container {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-shadow: 0 10px 30px rgba(0,0,0,0.15);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.media {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 220px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 12px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.button-container {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 20px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.btn {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 10px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 10px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.yes-btn {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #ff4d6d;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.no-btn {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #ccc;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.result-container {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: none;</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="question-container container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;img</p>
+<p class="p1"><span class="Apple-converted-space">    </span>src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZpZ3cydm9mMHRtdm12dmM3cTRjb3hqNDhlemF2MnRmbzhpY3YwdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1JmGiBtqTuehfYxuy9/giphy.gif"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>alt="Love GIF"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>class="media"</p>
+<p class="p1"><span class="Apple-converted-space">  </span>/&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="question"&gt;Do you love me?&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="button-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="yes-btn btn js-yes-btn"&gt;Yes&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="no-btn btn js-no-btn"&gt;No&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="result-container container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;img</p>
+<p class="p1"><span class="Apple-converted-space">    </span>src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZpZ3cydm9mMHRtdm12dmM3cTRjb3hqNDhlemF2MnRmbzhpY3YwdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1JmGiBtqTuehfYxuy9/giphy.gif"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>alt="Love Result GIF"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>class="media"</p>
+<p class="p1"><span class="Apple-converted-space">  </span>/&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;I knew it! Minshi💖 Love You Too💖&lt;/h2&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">const yesBtn = document.querySelector('.js-yes-btn');</p>
+<p class="p1">const noBtn = document.querySelector('.js-no-btn');</p>
+<p class="p1">const questionBox = document.querySelector('.question-container');</p>
+<p class="p1">const resultBox = document.querySelector('.result-container');</p>
+<p class="p2"><br></p>
+<p class="p1">yesBtn.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>questionBox.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>resultBox.style.display = 'block';</p>
+<p class="p1">});</p>
+<p class="p2"><br></p>
+<p class="p1">noBtn.addEventListener('mouseover', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const x = Math.random() * 200 - 100;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const y = Math.random() * 200 - 100;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>noBtn.style.transform = `translate(${x}px, ${y}px)`;</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
